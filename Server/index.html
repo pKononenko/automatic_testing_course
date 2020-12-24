@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Курсова робота</title>
+        <link href="./css/index.css" rel="stylesheet">
+    </head>
+    <body onload="user_cookies();">
+    <body>
+        <div class = "flex-container">
+            <div class = "task-block">
+                <div id="task-area">
+                    <h3><strong>Завдання</strong></h3>
+                    <p>У одновимірному масиві, що складається з n елементів, обчислити середнє гармонічне значення позитивних елементів масиву.</p>
+                </div>
+
+                <div id = "task" style = "display: none;">
+                    <h3><strong>Введіть послідовність:</strong></h3>
+                    <form>
+                        <ul id="task-area-input-form">
+                            <li><input class = "data_input"></li>
+                        </ul>
+                        <div id="expandable-list" style = "display: inline-block;">
+                            <input type = "button" value = "+" id = "add-l" onclick = "add_node();">
+                            <input type = "button" value = "-" id = "remove-l" onclick = "delete_node();">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="button" value = "Отримати результат" id = "result-button" onclick = "calculate_task();">
+                            <p id = "error-message" style = "display: none;">Введено некоректні дані</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <h3><strong>Результати:</strong></h3>
+                    <ul id = "comments-area">
+                    </ul>
+                </div>
+            </div>
+
+            <div id = "template-area" class = "log-reg-block">
+            </div>
+        </div>
+        <script src='./js/index.js'></script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+.flex-container
+{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.task-block
+{
+    display: inline-block;
+    border: 4px double black;
+    border-radius: 0 20px 0 20px;
+    width: 50%;
+
+    padding: 10px;
+    margin: 15px;
+}
+
+.log-reg-block
+{
+    display: inline-block;
+    border-radius: 0 20px 0 20px;
+    border: 4px double black;
+    width: 20%;
+
+    padding: 10px;
+    margin: 15px;
+}
+
+#change-reg 
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-left: -15%;
+}
+
+#error-message
+{
+    color: red;
+}
+
+#add-l, #remove-l
+{
+    margin-bottom: 4px;
+}
+
+li 
+{
+    display: inline-block;
+}
+
+.input-radio-log-reg
+{
+    visibility:hidden;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+input:checked + label
+{
+    border: 1px solid rgb(75, 70, 70);
+}
+
+#login-form, #register-form, #logout-area
+{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#login-email, #login-password, #reg-name, #reg-email, #reg-password
+{
+    width: 60%;
+    flex: 1;
+}
+
+#task-area-input-form
+{   
+    padding-inline-start: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: column wrap;
+}
+
+.data_input
+{
+    margin-right: -50px;
+    width: 45%;
+}
+
+#comments-area
+{
+    padding-inline-start: 0;
+}
+
+.comments-li
+{
+    display: block;
+}
